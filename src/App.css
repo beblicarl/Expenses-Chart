@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+  height: 100vh;
+  background-color: hsl(27, 66%, 92%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  /* outline: 1px solid red; */
+}
+
+.background {
+  background-color: hsl(27, 66%, 92%);
+}
+
+/***HOME******/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*****BALANCE*****/
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+  max-height: 6em;
+  width: 93%;
+  border-radius: 5px;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+
+.balance h2 {
+  color: hsl(27, 66%, 92%);
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.balance span {
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+  line-height: 2.1em;
+  font-size: 1.2rem;
+}
+
+/********CHART*******/
+
+.bar-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 17em;
+  padding-top: 3em;
+}
+
+.bar-chart-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  transform: rotate(180deg);
+  height: 15em;
+}
+
+.bar-chart-label {
+  margin-top: 0.312em; /* Adjust the spacing as needed */
+  font-size: 0.7rem; /* Adjust the font size as needed */
+  transform: rotate(180deg);
+  padding-top: 0.8em;
+  font-weight: 400;
+  color: hsl(28, 10%, 53%);
+}
+
+.bar-chart-progress {
+  width: 4.5em;
+  border-radius: 5px;
+  background-color: hsl(10, 79%, 65%);
+  transition: background-color 0.3s ease;
+}
+
+.bar-chart-progress:hover {
+  background-color: hsl(10, 79%, 85%);
+}
+
+.bar-chart-progress.max-value {
+  background-color: hsl(200, 72%, 62%);
+  transition: background-color 0.3s ease;
+}
+
+.bar-chart-progress.max-value:hover {
+  background-color: hsl(200, 72%, 82%);
+}
+/****SPENDING CARD****/
+
+.spending-card {
+  background-color: hsl(33, 100%, 98%);
+  text-align: center;
+  border-radius: 7px;
+  max-width: 93%;
+  padding: 1em;
+}
+
+.spending-card h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.horizontal-line {
+  height: 2px; /* Adjust the thickness as needed */
+  background-color: hsl(27, 66%, 92%);
+  margin: 0.8em 0; /* Adjust the margin as needed */
+}
+
+.spending-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spending-total span {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: hsl(28, 10%, 53%);
+}
+
+.spending-this-month h2 {
+  line-height: 1.6em;
+  font-size: 1.6rem;
+}
+
+.spending-last-month {
+  margin-top: 1.5em;
+}
+
+@media (min-width: 800px) {
+  .balance {
+    width: 30%;
+  }
+
+  .spending-card {
+    width: 30%;
+  }
+
+  .bar-chart {
+    height: 13em;
+    padding-top: 2em;
+  }
+
+  .bar-chart-bar {
+    height: 11em;
+  }
+
+  .bar-chart-label {
+    padding-top: 0.5em;
+  }
+
+  .bar-chart-progress {
+    width: 3em;
+    border-radius: 7px;
+  }
+  .balance {
+    padding: 0.7em;
+  }
+  .balance h2 {
+    font-size: 0.8rem;
+  }
+  .balance span {
+    font-size: 1rem;
+  }
+
+  .spending-this-month h2 {
+    line-height: 1.5em;
+    font-size: 1.2rem;
+  }
+
+  .spending-last-month {
+    margin-top: 1em;
+  }
+}
